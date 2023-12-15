@@ -60,57 +60,43 @@ class: middle, title-slide
 
 # Introduction
 
-- Comprendre comment les arbres vont réagir au changements climatiques
+Comprendre la distribution des espèce
 
---
-- SDM: la seule méthode qui nécessite d'une séance de thérapie
+.center[![:scale 70%](images/mckenney.png)]
 
---
-- Modèles mécanistiques appué par la théorie
+.cite[McKenney et al. 2007 BioScience]
 
---
-- Modèle de dynamique basé sur la théorie de la metapopulation
+---
 
-![](https://willvieira.github.io/ms_STM-managed/manuscript/img/model_equation_fm.png)
+Modèle basé sur la théorie de la métapopulation
+
+.pull-left2[![:scale 85%](images/vissault2020.png)]
+
+.pull-right2[
+- Temperé
+- Boréal
+- Mixte
+
+<br>
+
+- Colonisation
+- Extinction
+- Competition
+]
+
 
 .cite[Vissault et al. [2020](https://link) Journal of Biogeography]
 
 ---
 
-.center[
-![](images/paper1.png)
-]
-
----
-
-#### Paying colonization credit with forest management could accelerate the range shift of temperate trees under climate change
+#### *Paying colonization credit with forest management could accelerate the range shift of temperate trees under climate change*
 
 
 .center[
 ![:scale 60%](https://willvieira.github.io/ms_STM-managed/manuscript/img/sim-result_3.png)
 ]
 
----
-
-# Conclusions
-
-- Plantation est plus efficace que la coupe pour augmenter la resilience et accelerer la dynamique de migration
-
---
-- Peu d'information à l'echèlle locale
-
---
-- Pas de difference entre les espèces
-
-
----
-class: middle, center, inverse
-
-# Les taux demographiques
-
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
-#### Une unité centale pour comprendre la dynamique des forets
+.cite[Vieira et al. en révision]
 
 ---
 # La démographie en tant que nœd central entre les différentes échelles
@@ -163,19 +149,25 @@ $r \sim Climat + compétition$
 
 ---
 
-# L'effet du climat et de la compétition peut être différent dans l'aire de répartition
+# La correlation entre **performance** et **occurance** est faible pour la majorité des espèces
 
 <br>
 
 .center[
-![:scale 80%](images/SIASH.png)
+![:scale 80%](images/LeSquin2020.png)
 ]
 
-.cite[Louthan et al. 2015 TREE]
+.cite[Le Squin et al. 2020 Global Ecology and Biogeography]
+
+---
+# La variabilité ne devrait pas être négligée
+
+<br><br>
+.center[![:scale 90%](images/growth_abibal.png)]
 
 ---
 
-# Les différentes sources de variabilité démographique
+# Les multiples sources de variabilité
 
 .center[
   ![:scale 60%](images/Shoemaker2020a.png)
@@ -186,7 +178,7 @@ $r \sim Climat + compétition$
 ---
 
 
-# Les différentes sources de variabilité démographique
+# Les multiples sources de variabilité
 
 .center[
   ![:scale 60%](images/Shoemaker2020b.png)
@@ -196,7 +188,7 @@ $r \sim Climat + compétition$
 
 ---
 
-# Les différentes sources de variabilité démographique
+# Les multiples sources de variabilité
 
 .center[
   ![:scale 60%](images/Shoemaker2020c.png)
@@ -206,7 +198,7 @@ $r \sim Climat + compétition$
 
 ---
 
-# Les différentes sources de variabilité démographique
+# Les multiples sources de variabilité
 
 .center[
   ![:scale 60%](images/Shoemaker2020d.png)
@@ -245,13 +237,21 @@ class: center, inverse
 
 ### Quantifier l'effet de la compétition et du climate sur les taux démographiques des arbres
 
+--
+
 Comment l'effet relative entre compétition et climate varie dans <br>le gradient de l'aire de répartition
 
---
+---
+class: center, inverse
+
+
+### Quantifier l'effet de la compétition et du climate sur les taux démographiques des arbres
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ### Quantifier l'effet de la variabilité des taux démographiques sur le limite de l'aire de répartition
+
+--
 
 Quelle est le rôle de l'**incertude**, de la **stochasticité environmentalle**, et de l'**heterogenité spatiale** dans le gradient de l'aire de répartition
 
@@ -313,7 +313,7 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 
 # Les modèles démographiques
 
-- Modèle de croissance de Von Bertalanffy (~ temps + taille)
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individue)
 
 .center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-VBModel-1.png)]
 
@@ -321,7 +321,7 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 
 # Les modèles démographiques
 
-- Modèle de croissance de Von Bertalanffy (~ temps + taille)
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individue)
 - Modèle de survie (~ temps)
 
 .center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-mortModel-1.png)]
@@ -349,37 +349,22 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 
 # Les covariables - climat
 
+Température moyenne annuelle + précipitation annuelle moyenne
+
 - $\xi$: climat optimal
 - $\sigma$: étendue de la niche
 
 .center[![:scale 70%](https://willvieira.github.io/book_forest-demography-IPM/covariates_description_files/figure-html/fig-CovClim-1.png)]
 
 ---
+class: center, inverse, middle
 
-# Validation des modèles
+# Validation des modèles démographiques
 
-- Modèle construit en increment
-  - Effêt aléatoire sur la parcelle -> compétition -> climat
-
---
-
-- Leave-One-Out Cross-Validation (LOO-CV)
-
-.center[![:scale 100%](images/loo_cv.png)]
-
-- Le modèle complet (parcelle + compétiton + climat) est le plus performant
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
 
-# Validation des modèles
-
-- LOO-CV est relative aux modèles testé
-
---
-
-- Comparer les paramètres avec les valuers de trait en littérature
-
----
 
 # Validation des modèles
 
@@ -400,46 +385,41 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 .cite[Burns et al. 1990]
 
 ---
-
-# Validation des modèles
-
-**Recrutement**: le taux de recrutement d'une espèce est corrélé à la masse des graines
-
-.center[![:scale 45%](images/rec_validation.png)]
-
-.cite[Dı́az et al. 2022]
-
----
-
 # Validation des modèles
 
 **Compétition**: l'effet de la densité augument pour le espèces que sont intolerant à l'ombre
 
-.center[![:scale 45%](images/rec_validation.png)]
+.center[![:scale 80%](images/comp.png)]
 
 .cite[Burns et al. 1990]
 
 ---
 
-# Validation des modèles
-
 **Climat**: l'optimale climatique n'est pas corrélée avec le centre de la distribution
 
-.center[![:scale 45%](images/rec_validation.png)]
+.center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-matDist-1.png)]
 
+.cite[Demographic compensation stabilizes tree populations - Yang et al. 2022 Ecology Letters]
 ---
-
-# Validation des modèles
 
 **Climat**: l'étendue de la niche des espèce est corrélée avec l'éntendu climate observé
 
-.center[![:scale 90%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-climRangeVsTau-1.png)]
+.center[![:scale 93%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-climRangeVsTau-1.png)]
+
+---
+class: center, inverse, middle
+
+### Quelle est l'effet de la compétition et du climate sur les taux démographiques des arbres?
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+Comment l'effet relative entre compétition et climate varie dans <br>le gradient de l'aire de répartition
 
 ---
 
-# Quelle est l'effet de la compétition et du climate sur les taux démographiques des arbres?
+# Analyse de perturbations
 
-- Analyse de perturbations
+<br>
 
 $$
 	\frac{\partial \lambda_i}{\partial X_i} \approx \frac{\Delta \lambda_i}{\Delta X_i}
@@ -456,13 +436,13 @@ $$
 
 Entre les espèce et dans l'ensemble de leur distribution, $\lambda$ est plus sensible à **temperature** suivi de la **competition conspécifique**
 
-![:scale 95%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-ame-1.png)
+.center[![:scale 47%](images/fig-ame.png)]
 
 ---
 
-Partagé les parcelles entre froide, centre, et chaude pour tester comment la sensibilité varie dans le gradient de temperature
+Partager les parcelles entre froide, centre, et chaude pour tester comment la sensibilité varie dans le gradient de temperature
 
-**FIGURE AVEC UNE EXAMPLE DE PARTAGE EN 10%, 90% quantile**
+.center[![:scale 80%](images/hot_vs_cold.png)]
 
 ---
 
@@ -475,6 +455,12 @@ Il n'a pas d'effet majeur de changement de sensibilité entres les regions froid
 L'effet est present, mais c'est varié entre les espèces
 
 .center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-compClimVsTemp-1.png)]
+
+---
+
+Le ratio de la sensibilité entre competition et climate varie entre la limite chaude et froide, et dépant aussi de la position de la espèce dans le gradient de temperature
+
+.center[![:scale 100%](images/sens1.png)]
 
 ---
 
@@ -523,27 +509,256 @@ $\lambda \sim Climat + compétition$
 
 <br>
 
-$\lambda \sim Climat + compétition$
+$\lambda \sim Climat + compétition + erreur$
 
 .center[
-![:scale 68%](https://raw.githubusercontent.com/willvieira/talk_PhD/master/figures/Godsoe2017b.png)
+![:scale 68%](images/godsoe2017incert.png)
 ]
 
 .cite[Maguire Jr 1973 Am. Natur.; Holt 2009 PNAS; Fig adapted from Godsoe et al. 2017 TREE]
 
 ---
-# La variabilité de $\lambda$ peut augmenter le taux d'extinction
 
-*abies balsamea*
+# Les différentes sources de variabilité
+
+```{r,echo=FALSE}
+library(tidyverse)
+
+# generate random population growth rates
+set.seed(0.0)
+expand_grid(
+    mean = c(.05),
+    sd = c(0.02, 0.2)
+  ) |>
+  group_by(sd) |>
+  expand_grid(draw = 1:2000) |>
+  mutate(
+    lambda = rnorm(n(), mean, sd)
+  ) |>
+  filter(sd == 0.02) |>
+  ggplot() +
+  aes(lambda) +
+  aes(fill = factor(sd)) +
+  geom_density(alpha = 0.7, color = 'transparent') +
+  # geom_vline(xintercept = 0, linetype = 2) +
+  scale_fill_manual(
+    values = c('#5ab4ac', '#d8b365'),
+    labels = c(
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
+    )
+  ) +
+  theme_classic() +
+  labs(
+    x = expression(lambda),
+    y = '',
+    fill = NULL,
+    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
+  ) +
+  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
+  xlim(-.5, .5) +
+  theme(
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    legend.position = 'none'
+  )
+```
+
+- Uncertitude des paramètres
+
+---
+# Les différentes sources de variabilité
+
+```{r,echo=FALSE}
+library(tidyverse)
+
+# generate random population growth rates
+set.seed(0.0)
+expand_grid(
+    mean = c(.05),
+    sd = c(0.05, 0.2)
+  ) |>
+  group_by(sd) |>
+  expand_grid(draw = 1:2000) |>
+  mutate(
+    lambda = rnorm(n(), mean, sd)
+  ) |>
+  filter(sd == 0.05) |>
+  ggplot() +
+  aes(lambda) +
+  aes(fill = factor(sd)) +
+  geom_density(alpha = 0.7, color = 'transparent') +
+  # geom_vline(xintercept = 0, linetype = 2) +
+  scale_fill_manual(
+    values = c('#5ab4ac', '#d8b365'),
+    labels = c(
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
+    )
+  ) +
+  theme_classic() +
+  labs(
+    x = expression(lambda),
+    y = '',
+    fill = NULL,
+    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
+  ) +
+  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
+  xlim(-.5, .5) +
+  theme(
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    legend.position = 'none'
+  )
+```
+
+- Uncertitude des paramètres
+- Stochasticité environmentalle
+
+
+---
+# Heterogenité spatiale dans chaque modèle démographique
+
+<br>
+
+.center[![:scale 100%](images/randomeffect.png)]
+
+---
+# Les différentes sources de variabilité
+
+```{r,echo=FALSE}
+library(tidyverse)
+
+# generate random population growth rates
+set.seed(0.0)
+expand_grid(
+    mean = c(.05),
+    sd = c(0.05, 0.2)
+  ) |>
+  group_by(sd) |>
+  expand_grid(draw = 1:2000) |>
+  mutate(
+    lambda = rnorm(n(), mean, sd)
+  ) |>
+  filter(sd == 0.05) |>
+  ggplot() +
+  aes(lambda) +
+  aes(fill = factor(sd)) +
+  geom_density(alpha = 0.7, color = 'transparent') +
+  # geom_vline(xintercept = 0, linetype = 2) +
+  scale_fill_manual(
+    values = c('#5ab4ac', '#d8b365'),
+    labels = c(
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
+    )
+  ) +
+  theme_classic() +
+  labs(
+    x = expression(lambda),
+    y = '',
+    fill = NULL,
+    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
+  ) +
+  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
+  xlim(-.5, .5) +
+  theme(
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    legend.position = 'none'
+  )
+```
+
+- Uncertitude des paramètres
+- Stochasticité environmentalle
+- Heterogenité spatiale
+
+
+---
+# Les différentes sources de variabilité
+
+```{r,echo=FALSE}
+library(tidyverse)
+
+# generate random population growth rates
+set.seed(0.0)
+expand_grid(
+    mean = c(.05),
+    sd = c(0.05, 0.2)
+  ) |>
+  group_by(sd) |>
+  expand_grid(draw = 1:2000) |>
+  mutate(
+    lambda = rnorm(n(), mean, sd)
+  ) |>
+  filter(sd == 0.05) |>
+  ggplot() +
+  aes(lambda) +
+  aes(fill = factor(sd)) +
+  geom_density(alpha = 0.7, color = 'transparent') +
+  geom_vline(xintercept = 0, linetype = 2) +
+  scale_fill_manual(
+    values = c('#5ab4ac', '#d8b365'),
+    labels = c(
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
+    )
+  ) +
+  theme_classic() +
+  labs(
+    x = expression(lambda),
+    y = '',
+    fill = NULL,
+    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
+  ) +
+  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
+  xlim(-.5, .5) +
+  theme(
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    legend.position = 'none'
+  )
+```
+
+- Uncertitude des paramètres
+- Stochasticité environmentalle
+- Heterogenité spatiale
+- **Taux d'extinction**
+
+---
+# La variabilité dans le gradient de temperature
+
+<br>
+
+.center[![:scale 80%](images/example_slope.png)]
+
+---
+class: middle, center, inverse
+
+# Résultats (preliminaires)
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+
+---
+
+La variabilité environmentalle et spatialle augmente la limite de l'aire de répartartion
+
+<br>
+
+.font90[*abies balsamea (distribution froide)*]
 
 .center[
 ![:scale 95%](images/lambda_varAbibal1.png)
 ]
 
 ---
-# La variabilité de $\lambda$ peut augmenter le taux d'extinction
 
-*abies balsamea*
+La variabilité environmentalle et spatialle augmente la limite de l'aire de répartartion
+
+<br>
+
+.font90[*abies balsamea (distribution froide)*]
 
 .center[
 ![:scale 95%](images/lambda_varAbibal2.png)
@@ -551,22 +766,86 @@ $\lambda \sim Climat + compétition$
 
 
 ---
-# La variabilité de $\lambda$ peut augmenter le taux d'extinction
+Le risque d'extinction peut agumenter même si la moyenne est constante
 
-*Picea mariana*
+<br>
+
+.font90[*Picea mariana* (distribution chaude)]
 
 .center[
 ![:scale 70%](images/lambda_var1.png)
 ]
 
 ---
-# La variabilité de $\lambda$ peut augmenter le taux d'extinction
+Le risque d'extinction peut agumenter même si la moyenne est constante
 
-*Picea mariana*
+<br>
+
+.font90[*Picea mariana* (distribution chaude)]
 
 .center[
 ![:scale 70%](images/lambda_var2.png)
 ]
+
+---
+
+# Conclusion
+
+- la démographie est plus sensible au climat que à la compétition
+- La sensibilité à la compétition est plus important au centre
+
+--
+- La variabilité joue un ròle considerable dans la limite de l'aire de réparation
+- Reconsiliation des échelles
+- Démographie + métapopulation
+
+$$
+\frac{dp}{dt} = \alpha p (1 - p) - \varepsilon p
+$$
+
+
+```{r,echo=FALSE,fig.height=4}
+library(tidyverse)
+
+# generate random population growth rates
+set.seed(0.0)
+expand_grid(
+    mean = c(.05),
+    sd = c(0.05, 0.2)
+  ) |>
+  group_by(sd) |>
+  expand_grid(draw = 1:2000) |>
+  mutate(
+    lambda = rnorm(n(), mean, sd)
+  ) |>
+  filter(sd == 0.05) |>
+  ggplot() +
+  aes(lambda) +
+  aes(fill = factor(sd)) +
+  geom_density(alpha = 0.7, color = 'transparent') +
+  geom_vline(xintercept = 0, linetype = 2) +
+  scale_fill_manual(
+    values = c('#5ab4ac', '#d8b365'),
+    labels = c(
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.05'),
+      expression(bar(lambda)~'='~'1.05; '~sigma[lambda]~'='~'0.2')
+    )
+  ) +
+  theme_classic() +
+  labs(
+    x = expression(lambda),
+    y = '',
+    fill = NULL,
+    # subtitle = expression('Distribution of 2000 draws of'~lambda~'~'~plain(N(1.05, sd)))
+  ) +
+  scale_x_continuous(breaks = seq(0.5, 1.5, 0.5)) +
+  xlim(-.5, .5) +
+  theme(
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank(),
+    legend.position = 'none'
+  )
+```
 
 ---
 
@@ -575,13 +854,23 @@ class: inverse
 .pull-left1[
 <br>
 
-# Key message here
+# Obrigado !
 
-<br><br><br><br><br><br><br><br>
+<br><br><br>
 
-**Special thanks to**
+**Dominique Gravel**
 
-Nice people
+**Robert Bradley**
+
+**Bill Shipley**
+
+**Daniel Houle**
+
+**Labo++**
+
+**Amaël Le Squin**
+
+**Andrew MacDonald**
 ]
 
 .pull-right1[
