@@ -20,7 +20,7 @@
     background-size: contain;
     background-image: url(../../images/IE_logo_renversé.png);
    }
-   .uni-logo {
+   .bios2-logo {
     content: "";
     position: absolute;
     top:    32px;
@@ -29,11 +29,11 @@
     width:  220px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../../images/udes.png);
+    background-image: url(../../images/cropped-Bios2_ENG_court.png);
    }
   .title-slide h1 {
     color: #e7e8e2;
-    font-size: 42px!important;
+    font-size: 38px!important;
     font-weight: normal;
     margin-top: 0px;
     width: 65%;
@@ -42,7 +42,7 @@
 
   .title-slide h2 {
     color: #e7e8e2;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: normal;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -67,7 +67,7 @@
 
   h1 {
     color: #000000;
-    font-size: 42px!important;
+    font-size: 37px!important;
     font-weight: normal;
     margin-top: 0px;
   }
