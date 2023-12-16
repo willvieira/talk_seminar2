@@ -60,7 +60,7 @@ class: middle, title-slide
 
 # Introduction
 
-Comprendre la distribution des espèce
+Comprendre la distribution des espèces
 
 .center[![:scale 70%](images/mckenney.png)]
 
@@ -73,15 +73,15 @@ Modèle basé sur la théorie de la métapopulation
 .pull-left2[![:scale 85%](images/vissault2020.png)]
 
 .pull-right2[
-- Temperé
-- Boréal
+- Tempérée
+- Boréale
 - Mixte
 
 <br>
 
 - Colonisation
 - Extinction
-- Competition
+- Compétition
 ]
 
 
@@ -99,7 +99,7 @@ Modèle basé sur la théorie de la métapopulation
 .cite[Vieira et al. en révision]
 
 ---
-# La démographie en tant que nœd central entre les différentes échelles
+# La démographie en tant que nœud central entre les différentes échelles
 
 .center[
 ![:scale 70%](images/Griffith2016.png)
@@ -109,7 +109,7 @@ Modèle basé sur la théorie de la métapopulation
 
 ---
 
-# Lien entre les taux demographique et l'aire de répartition d'une espèce
+# Lien entre les taux demographiques et l'aire de répartition d'une espèce
 
 <br>
 
@@ -123,7 +123,7 @@ $r \sim Climat$
 
 ---
 
-# Lien entre les taux demographique et l'aire de répartition d'une espèce
+# Lien entre les taux demographiques et l'aire de répartition d'une espèce
 
 <br>
 
@@ -137,19 +137,7 @@ $r \sim Climat + compétition$
 
 ---
 
-# Modèle de distribution démographique
-
-<br>
-.center[
-![:scale 70%](https://raw.githubusercontent.com/willvieira/talk_PhD/master/figures/Schurr2012.png)
-]
-
-.cite[Schurr et al. 2012 Journal of Biogeography]
-
-
----
-
-# La correlation entre **performance** et **occurance** est faible pour la majorité des espèces
+# La corrélation entre **performance** et **occurrence** est faible pour la majorité des espèces
 
 <br>
 
@@ -208,7 +196,7 @@ $r \sim Climat + compétition$
 
 ---
 
-# L'effet de la variabilité sur le taux démographique peu être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>negatif</span>
+# L'effet de la variabilité sur le taux démographique peut être <span style='color: #67a9cf;'>positif</span> ou <span style='color: #ef8a62;'>négatif</span>
 
 - <span style='color: #ef8a62;'>Risque d'extinction</span>
 
@@ -235,31 +223,31 @@ $r \sim Climat + compétition$
 class: center, inverse
 
 
-### Quantifier l'effet de la compétition et du climate sur les taux démographiques des arbres
+### Quantifier l'effet de la compétition et du climat sur les taux démographiques des arbres
 
 --
 
-Comment l'effet relative entre compétition et climate varie dans <br>le gradient de l'aire de répartition
+Comment l'effet relatif entre compétition et climat varie dans <br>le gradient de l'aire de répartition
 
 ---
 class: center, inverse
 
 
-### Quantifier l'effet de la compétition et du climate sur les taux démographiques des arbres
+### Quantifier l'effet de la compétition et du climat sur les taux démographiques des arbres
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
-### Quantifier l'effet de la variabilité des taux démographiques sur le limite de l'aire de répartition
+### Quantifier l'effet de la variabilité des taux démographiques sur la limite de l'aire de répartition
 
 --
 
-Quelle est le rôle de l'**incertude**, de la **stochasticité environmentalle**, et de l'**heterogenité spatiale** dans le gradient de l'aire de répartition
+Quelle est le rôle de l'**incertitude**, de la **stochasticité environnementale**, et de l'**hétérogénéité spatiale** dans le gradient de l'aire de répartition
 
 ---
 
 # L'approche
 
-Comment quantifier l'effet de la **compétition** et du **climate** sur les taux démographiques des arbres?
+Comment quantifier l'effet de la **compétition** et du **climat** sur les taux démographiques des arbres?
 
 --
 
@@ -270,19 +258,19 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 - $\lambda$ est decomposé en 3 sous modèles:
   - Croissance
   - Survie
-  - recrutement
+  - Recrutement
 
 --
 
-- Modèle de Projection Integrale (IPM)
+- Modèle de Projection Intégrale (IPM)
 
 --
 
 - Modèles hiérarchiques non linéaires bayésiens
 
 --
-  - Hiérarchique: variance partitioné à differentes échelles
-  - non linéaire: modèles mechanistique basé sur l'écologie
+  - Hiérarchique: variance partitionée à differentes échelles
+  - non linéaire: modèles mechanistiques basés sur l'écologie
   - Bayésien: pour tracer l'incertitude
 
 
@@ -303,17 +291,17 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 ]
 
 .pull-right1[
-- 31 espèce d'arbres
+- 31 espèces d'arbres
 - 22 feuillus + 9 conifères
-- Tolerance à l'ombre
-- Sucession
+- Tolérance à l'ombre
+- Succession
 ]
 
 ---
 
 # Les modèles démographiques
 
-- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individue)
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
 
 .center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-VBModel-1.png)]
 
@@ -321,7 +309,7 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 
 # Les modèles démographiques
 
-- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individue)
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
 - Modèle de survie (~ temps)
 
 .center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/model_description_files/figure-html/fig-mortModel-1.png)]
@@ -330,7 +318,7 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 
 # Les modèles démographiques
 
-- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individue)
+- Modèle de croissance de Von Bertalanffy (~ temps + taille de l'individu)
 - Modèle de survie (~ temps)
 - Modèle de recrutement (~ temps + taille de la parcelle)
 
@@ -340,8 +328,8 @@ Comment quantifier l'effet de la **compétition** et du **climate** sur les taux
 
 # Les covariables - compétition
 
-- $\beta$: l'effêt totale de la surface terrière des **individus plus grands**
-- $\theta$: l'effêt partagé entre conspécifique et heterospécifique
+- $\beta$: l'effet total de la surface terrière des **individus plus grands**
+- $\theta$: l'effet partagé entre conspécifique et hétérospécifique
 
 .center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/covariates_description_files/figure-html/fig-CovCompEffectGrowthMort-1.png)]
 
@@ -368,7 +356,7 @@ class: center, inverse, middle
 
 # Validation des modèles
 
-**Croissance**: la taille maximale prédite pour une espèce est corrélée à la taille maximale de espèce trouvée dans la littérature
+**Croissance**: la taille maximale prédite pour une espèce est corrélée à la taille maximale des espèces trouvées dans la littérature
 
 .center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_intercept_files/figure-html/fig-efszGrowth2-1.png)]
 
@@ -387,7 +375,7 @@ class: center, inverse, middle
 ---
 # Validation des modèles
 
-**Compétition**: l'effet de la densité augument pour le espèces que sont intolerant à l'ombre
+**Compétition**: l'effet de la densité augmente pour les espèces qui sont intolérante à l'ombre
 
 .center[![:scale 80%](images/comp.png)]
 
@@ -395,25 +383,25 @@ class: center, inverse, middle
 
 ---
 
-**Climat**: l'optimale climatique n'est pas corrélée avec le centre de la distribution
+**Climat**: l'optimal climatique n'est pas corrélé avec le centre de la distribution
 
 .center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-matDist-1.png)]
 
 .cite[Demographic compensation stabilizes tree populations - Yang et al. 2022 Ecology Letters]
 ---
 
-**Climat**: l'étendue de la niche des espèce est corrélée avec l'éntendu climate observé
+**Climat**: l'étendue de la niche des espèces est corrélée avec l'éntendue climatique observée
 
 .center[![:scale 93%](https://willvieira.github.io/book_forest-demography-IPM/pars_climate_files/figure-html/fig-climRangeVsTau-1.png)]
 
 ---
 class: center, inverse, middle
 
-### Quelle est l'effet de la compétition et du climate sur les taux démographiques des arbres?
+### Quelle est l'effet de la compétition et du climat sur les taux démographiques des arbres?
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
-Comment l'effet relative entre compétition et climate varie dans <br>le gradient de l'aire de répartition
+Comment l'effet relatif entre compétition et climat varie dans <br>le gradient de l'aire de répartition
 
 ---
 
@@ -425,46 +413,43 @@ $$
 	\frac{\partial \lambda_i}{\partial X_i} \approx \frac{\Delta \lambda_i}{\Delta X_i}
 $$
 
---
-
 .center[![:scale 50%](images/sens_example.png)]
-
 
 .cite[Adapté de Caswell 2001 - LTRE]
 
 ---
 
-Entre les espèce et dans l'ensemble de leur distribution, $\lambda$ est plus sensible à **temperature** suivi de la **competition conspécifique**
+Entre les espèces et dans l'ensemble de leur distribution, $\lambda$ est plus sensible à la **temperature** suivi de la **compétition conspécifique**
 
 .center[![:scale 47%](images/fig-ame.png)]
 
 ---
 
-Partager les parcelles entre froide, centre, et chaude pour tester comment la sensibilité varie dans le gradient de temperature
+Partager les parcelles entre froide, centre, et chaude pour tester comment la sensibilité varie dans le gradient de température
 
 .center[![:scale 80%](images/hot_vs_cold.png)]
 
 ---
 
-Il n'a pas d'effet majeur de changement de sensibilité entres les regions froides et chaudes
+Il n'y a pas d'effet majeur de changement de sensibilité entre les régions froides et chaudes
 
 ![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-ame_range-1.png)
 
 ---
 
-L'effet est present, mais c'est varié entre les espèces
+L'effet est présent, mais c'est varié entre les espèces
 
 .center[![:scale 80%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-compClimVsTemp-1.png)]
 
 ---
 
-Le ratio de la sensibilité entre competition et climate varie entre la limite chaude et froide, et dépant aussi de la position de la espèce dans le gradient de temperature
+Le ratio de la sensibilité entre compétition et climat varie entre la limite chaude et froide, et dépend aussi de la position de l'espèce dans le gradient de température
 
 .center[![:scale 100%](images/sens1.png)]
 
 ---
 
-Le ratio de la sensibilité entre competition et climate varie entre la limite chaude et froide, et dépant aussi de la position de la espèce dans le gradient de temperature
+Le ratio de la sensibilité entre compétition et climat varie entre la limite chaude et froide, et dépend aussi de la position de l'espèce dans le gradient de température
 
 .center[![:scale 100%](https://willvieira.github.io/book_forest-demography-IPM/marginal_lambda_files/figure-html/fig-sensBorder_temp-1.png)]
 
@@ -472,26 +457,26 @@ Le ratio de la sensibilité entre competition et climate varie entre la limite c
 
 # Conclusion
 
-- Effet du climat est superieur à de la compéttion
-- L'effet de la copétition augmente dans le centre de l'aire de répartion
+- Effet du climat est supérieur à la compétition
+- L'effet de la compétition augmente dans le centre de l'aire de répartition
 - L'effet du climat augmente dans les bordures
-- Cet approache ne prendre pas en compte la variabilité des covariables
+- Cette approche ne prend pas en compte la variabilité des covariables
 
 <br>
-- Meilleur comprendre l'effet des **changements climatique** et de l'**aménagement forestier**
+- Permet de mieux comprendre l'effet des **changements climatiques** et de l'**aménagement forestier** sur la dynamique des arbres
 
 ---
 class: middle, center, inverse
 
-### Comment le taux de croissance ( $\lambda$ ) varie<br>dans le gradient de temperature?
+### Comment le taux de croissance ( $\lambda$ ) varie<br>dans le gradient de température?
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
-**Quelle est le rôle de la variabilité de $\lambda$ sur la <br>limite de l'aire de réparation?**
+**Quelle est le rôle de la variabilité de $\lambda$ sur la <br>limite de l'aire de répartition?**
 
 
 ---
-# La limite de l'aire de réparation devrait être dependant du climat et de la compétition
+# La limite de l'aire de répartition devrait être dependant du climat et de la compétition
 
 <br>
 
@@ -505,7 +490,7 @@ $\lambda \sim Climat + compétition$
 
 
 ---
-# La limite de l'aire de réparation devrait être dependant du climat et de la compétition
+# La limite de l'aire de répartition devrait être dependant du climat et de la compétition
 
 <br>
 
@@ -564,7 +549,7 @@ expand_grid(
   )
 ```
 
-- Uncertitude des paramètres
+- Incertitude des paramètres
 
 ---
 # Les différentes sources de variabilité
@@ -612,12 +597,12 @@ expand_grid(
   )
 ```
 
-- Uncertitude des paramètres
-- Stochasticité environmentalle
+- Incertitude des paramètres
+- Stochasticité environnementale
 
 
 ---
-# Heterogenité spatiale dans chaque modèle démographique
+# hétérogénéité spatiale dans chaque modèle démographique
 
 <br>
 
@@ -669,9 +654,9 @@ expand_grid(
   )
 ```
 
-- Uncertitude des paramètres
-- Stochasticité environmentalle
-- Heterogenité spatiale
+- Incertitude des paramètres
+- Stochasticité environnementale
+- hétérogénéité spatiale
 
 
 ---
@@ -720,13 +705,13 @@ expand_grid(
   )
 ```
 
-- Uncertitude des paramètres
-- Stochasticité environmentalle
-- Heterogenité spatiale
+- Incertitude des paramètres
+- Stochasticité environnementale
+- hétérogénéité spatiale
 - **Taux d'extinction**
 
 ---
-# La variabilité dans le gradient de temperature
+# La variabilité dans le gradient de température
 
 <br>
 
@@ -735,14 +720,14 @@ expand_grid(
 ---
 class: middle, center, inverse
 
-# Résultats (preliminaires)
+# Résultats (préliminaires)
 
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 
 ---
 
-La variabilité environmentalle et spatialle augmente la limite de l'aire de répartartion
+La variabilité environnementale et spatiale augmente la limite de l'aire de répartition
 
 <br>
 
@@ -754,7 +739,7 @@ La variabilité environmentalle et spatialle augmente la limite de l'aire de ré
 
 ---
 
-La variabilité environmentalle et spatialle augmente la limite de l'aire de répartartion
+La variabilité environnementale et spatiale augmente la limite de l'aire de répartition
 
 <br>
 
@@ -766,7 +751,7 @@ La variabilité environmentalle et spatialle augmente la limite de l'aire de ré
 
 
 ---
-Le risque d'extinction peut agumenter même si la moyenne est constante
+Le risque d'extinction peut augmenter même si la moyenne est constante
 
 <br>
 
@@ -777,7 +762,7 @@ Le risque d'extinction peut agumenter même si la moyenne est constante
 ]
 
 ---
-Le risque d'extinction peut agumenter même si la moyenne est constante
+Le risque d'extinction peut augmenter même si la moyenne est constante
 
 <br>
 
@@ -791,12 +776,12 @@ Le risque d'extinction peut agumenter même si la moyenne est constante
 
 # Conclusion
 
-- la démographie est plus sensible au climat que à la compétition
-- La sensibilité à la compétition est plus important au centre
+- la démographie est plus sensible au climat qu'à la compétition
+- La sensibilité à la compétition est plus importante au centre
 
 --
-- La variabilité joue un ròle considerable dans la limite de l'aire de réparation
-- Reconsiliation des échelles
+- La variabilité joue un rôle considérable dans la limite de l'aire de répartition
+- Réconciliation des échelles
 - Démographie + métapopulation
 
 $$
