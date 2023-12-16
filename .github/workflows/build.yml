@@ -25,6 +25,8 @@ jobs:
 
       - name: Install dependencies
         run: make install
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: build html
         run: make
